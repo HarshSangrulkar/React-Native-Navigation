@@ -1,11 +1,10 @@
-import React from "react";
 import { View, Text } from "react-native";
 import { StackScreenProps } from "@react-navigation/stack";
 import RootStackParamList from "../navigation/types";
 
 type Props = StackScreenProps<RootStackParamList, "Details">;
 
-const DetailsScreen: React.FC<Props> = ({ route }) => {
+const DetailsScreen = ({ route }: Props) => {
   const { message } = route.params; // Extract message from parameters
 
   return (
